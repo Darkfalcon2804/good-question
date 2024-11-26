@@ -20,7 +20,10 @@ int raised(){
 return pow(x,y);
 //////method 2
 int result=1;
-for(int i=1;i<=y)
+for(int i=1;i<=y;i++){
+    result*=x;
+}
+return result;
 }
 };
 int main(){
