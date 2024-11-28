@@ -9,10 +9,13 @@ int maxe(int a,int b){
 float maxe(float a,float b){
     return max(a,b);
 }
-
+double maxe(double a,double b){
+    return max(a,b);
+}
 };
 int main(){
     A c1;
+    ////////Int
     int a;
     cout<<"Enter the number: ";
     cin>>a;
@@ -20,7 +23,8 @@ int main(){
     cout<<"Enter the number: ";
     cin>>b;
     int y=c1.maxe(a,b);
-    cout<<"The maximam number is: "<<y<<endl;
+    cout<<"The maximam of int number is: "<<y<<endl;
+    ///////////Float    
     float x;
     cout<<"Enter the number: ";
     cin>>x;
@@ -28,5 +32,11 @@ int main(){
     cout<<"Enter the number: ";
     cin>>z;
     float p=c1.maxe(x,z);
-    cout<<"The maximam number is: "<<p<<endl;
+    cout<<"The maximam of float number is: "<<p<<endl;
+    //////////Double
+    double r,f;
+    cout<<"Enter two numbers: ";
+    cin>>r>>f;
+    double u=c1.maxe(r,f);
+    cout<<"The maximum of double number is: "<<u<<endl;
     }
